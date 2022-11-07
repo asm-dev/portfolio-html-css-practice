@@ -34,15 +34,15 @@ footer {
     text-decoration: none;
 }
 
-#nav-link-1:hover {
+#nav-link-portfolio:hover {
     background-color: #fe924446;
 }
 
-#nav-link-2:hover {
+#nav-link-skills:hover {
     background-color: #f5336336;
 }
 
-#nav-link-3:hover {
+#nav-link-contact:hover {
     background-color: #2f877a3b;
 }
 
@@ -88,4 +88,16 @@ nav ul {
 .social-media {
     width: 3em;
     fill: rgb(231, 231, 231);
+}
+
+.section {
+    margin: 5em auto 5em auto;
+}
+
+#skills-heading {
+    margin-top: 3em;
+}
+
+main {
+    margin: auto 0.8em auto 0.8em;
 }
