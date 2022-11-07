@@ -1,19 +1,14 @@
-header {
-    background-color: gray;
-    height: 35rem;
-    background-position: center;
-    background-size: cover
-}
-
 body {
     margin: 0 0 0 0;
     background-color: whitesmoke;
     color: rgb(43, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-link {
-    color: white;
-    background-color: aqua;
+header {
+    background-color: white;
+    padding-top: 1em;
+    margin-bottom: 3em;
 }
 
 footer {
@@ -23,3 +18,52 @@ footer {
     bottom:0;
     width:100%;
 }
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(107, 107, 107);
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: rgb(43, 43, 43);
+    border: 1px solid black;
+    padding: 4px 12px 4px 12px;
+    text-decoration: none;
+}
+
+#intro {
+    background-image: url(../images/colours-background.jpg);
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro h1 {
+    background: rgba(255, 255, 255, 0.65);     
+    padding: 0.5em 5em 0.5em 5em;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1em;
+    list-style: none;
+    padding-right: 1em;
+}
+
+#logo {
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    padding-bottom: 1em;
+    font-size: 24px;
+}
+
+
