@@ -12,8 +12,8 @@ header {
 }
 
 footer {
-    background-color: gray;
-    height: 10em;
+    background-color: rgb(56, 51, 54);
+    height: 5em;
     position:absolute;
     bottom:0;
     width:100%;
@@ -66,4 +66,14 @@ nav ul {
     font-size: 24px;
 }
 
+#sm-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3em;
+}
 
+.social-media {
+    width: 3em;
+    fill: rgb(231, 231, 231);
+}
