@@ -1,0 +1,25 @@
+header {
+    background-color: gray;
+    height: 35rem;
+    background-position: center;
+    background-size: cover
+}
+
+body {
+    margin: 0 0 0 0;
+    background-color: whitesmoke;
+    color: rgb(43, 43, 43);
+}
+
+.nav-link {
+    color: white;
+    background-color: aqua;
+}
+
+footer {
+    background-color: gray;
+    height: 10em;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
