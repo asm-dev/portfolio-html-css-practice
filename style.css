@@ -29,9 +29,21 @@ footer {
 
 .nav-link {
     color: rgb(43, 43, 43);
-    border: 1px solid black;
-    padding: 4px 12px 4px 12px;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 4px 18px 4px 18px;
     text-decoration: none;
+}
+
+#nav-link-1:hover {
+    background-color: #fe924446;
+}
+
+#nav-link-2:hover {
+    background-color: #f5336336;
+}
+
+#nav-link-3:hover {
+    background-color: #2f877a3b;
 }
 
 #intro {
