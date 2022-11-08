@@ -77,11 +77,30 @@
                 <h3>Would you like to reach out?</h3>
 
                 <form action="#" method="">
-                    <label>Name: </label>
-                    <input type="text" name="name">
-                    <label>Email: </label>
-                    <input type="email" name="email">
+
+                    <label for="name">Name: </label>
+                    <input required id="name" name="name" type="text" placeholder="Please add your name">
+                    
+                    <label for="email">Email: </label>
+                    <input ide="email" name="email" type="email">
+
+                    <fieldset>
+
+                        <legend>How can I help you?</legend>
+
+                        <label for="js">More information</label>
+                        <input required id="js" type="radio" name="favLang" value="js">
+
+                        <label for="python">Working together</label>
+                        <input required id="python" type="radio" name="favLang" value="python">
+                        
+                        <label for="net">Feedback</label>
+                        <input  required id="net" type="radio" name="favLang" value="net">
+
+                    </fieldset>
+
                     <input type="submit" name="submit" value="Submit">
+
                 </form>
                 <!-- How did you meet me (checkboxes)
                 GiHub tag
