@@ -14,8 +14,6 @@ header {
 footer {
     background-color: rgb(56, 51, 54);
     height: 5em;
-    position:absolute;
-    bottom:0;
     width:100%;
 }
 
