@@ -19,11 +19,33 @@ footer {
     margin-bottom: 0;
 }
 
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(107, 107, 107);
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background-color: white;
+    padding: 1em 0.5em;
+}
+
 .dropdown-top-button {
     width: 10em;
     padding: 1em 0 1em 0em;
     border: none;
     border-radius: 4px;
+    font-size: 1em;
 }
 
 .dropdown-top-button:hover{
@@ -47,7 +69,7 @@ footer {
     background-color: white;
     border-radius: 4px;
     margin: 0.5em;
-    padding: 0.5em 2em 0.5em 2em;
+    padding: 0.5em 2.8em 0.5em 2.8em;
     display: block;
     text-align: center;
     color: black;
@@ -68,33 +90,21 @@ footer {
     background-color: rgb(217, 194, 255);
 }
 
-#top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgb(107, 107, 107);
-    flex-wrap: wrap;
-    position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-    background-color: white;
-    padding: 1em 0.5em;
-    
-}
-
-
-#intro {
+.intro {
     background: linear-gradient(0deg, rgba(0,0,0,0.25253851540616246) 0%, rgba(0,0,0,0) 73%, rgba(255, 255, 255, 0.283) 100%), url(../images/colours-background.jpg);
     height: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
 }
 
-#intro h1 {
+.intro h1 {
     background: rgba(255, 255, 255, 0.65);     
-    padding: 0.5em 5em 0.5em 5em;
     border-radius: 5px;
+    padding: 0.5em;
+    font-size: 3em;
 }
 
 .logo-area {
@@ -111,25 +121,6 @@ footer {
     height: 5em;
 }
 
-#sm-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 3em;
-}
-
-.social-media {
-    width: 3em;
-    fill: rgb(231, 231, 231);
-}
-
-.section {
-    margin: 5em auto 5em auto;
-}
-
-#skills-heading {
-    margin-top: 3em;
-}
 
 .skill {
     border: 1px solid rgb(128, 128, 128);
@@ -141,7 +132,7 @@ footer {
 .skill-progress {
     height: 1em;
     border-radius: 8px;
-    background-color: #c73058;
+    background-color: #d0a5e9;
 }
 
 #skill-html {
@@ -160,9 +151,57 @@ footer {
     width: 80%;
 }
 
-form input {
+form input:not([type="radio"]) {
     display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 1em 0 1em 0;
+    margin: 1em auto 1em auto;
 }
+
+form input[type="radio"] {
+    width: 4em;
+    height: 4em;
+} 
+
+fieldset {
+    margin: 2em auto 2em auto;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+fieldset > div {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    margin: 1em auto;
+}
+
+form input[type="submit"] {
+    background-color: #f1bc29;
+    margin: 3em auto 5em auto;
+    font-size: 1.2em;
+}
+
+form input[type="submit"]:hover{
+    background-color: #8faceb;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3em;
+}
+
+.social-media {
+    width: 3em;
+    fill: rgb(231, 231, 231);
+}
+
+
+
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -179,11 +218,16 @@ form input {
     }
     
     .skill-progress {
-        background-color: rgb(32, 97, 97);
+        background-color: rgb(108, 213, 240);
     }
     
     form input {
         display: inline;
+    }
+
+    .intro h1 {
+        padding: 0.5em 5em 0.5em 5em;
+        font-size: 2em;
     }
 }
 

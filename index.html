@@ -9,7 +9,7 @@
 
         <header>
 
-            <div id="top-bar">
+            <div class="top-bar">
 
                 <div class="logo-area">
                     <img src="/images/nav-logo.png" alt="computer icon"/>
@@ -29,7 +29,7 @@
 
             </div>
 
-            <div id="intro">
+            <div class="intro">
                 <h1>Colourful code</h1>
             </div>
 
@@ -39,12 +39,12 @@
             <section id="portfolio">
 
                 <article>
-                    <h2>A bit about my porfolio</h2>
+                    <h2>About my work</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, sit molestiae? Quis sed tempora at fugiat ipsam nostrum nemo quia, provident perferendis soluta velit inventore, tempore corrupti totam debitis repellendus!</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa exercitationem nisi earum, dicta quasi, culpa illum ducimus eveniet officia provident aspernatur, itaque quod quibusdam non quidem veritatis quis accusantium consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloribus aliquam repellendus quos praesentium odit vero minima eos ipsa, expedita iure aut eum magni vitae ratione necessitatibus, est aperiam. Quis.</p>
                 </article>
 
-                <h3 id="skills-heading">Skills</h3>
+                <h3>Skills</h3>
 
                 </article>
 
@@ -82,25 +82,33 @@
                 <form action="#" method="">
 
                     <label for="name">Name: </label>
-                    <input required id="name" name="name" type="text" placeholder="Please add your name">
+                    <input required id="name" name="name" type="text" placeholder=" Please add your name">
                     
                     <label for="email">Email: </label>
                     <input ide="email" name="email" type="email">
 
                     <fieldset>
 
-                        <legend>How can I help you?</legend>
+                        <legend>Reason</legend>
 
-                        <label for="js">More information</label>
-                        <input required id="js" type="radio" name="favLang" value="js">
-
-                        <label for="python">Working together</label>
-                        <input required id="python" type="radio" name="favLang" value="python">
+                        <div>
                         
-                        <label for="net">Feedback</label>
-                        <input  required id="net" type="radio" name="favLang" value="net">
+                            <input required id="js" type="radio" name="favLang" value="js">
+                            <label for="js">More information</label>
 
-                    </fieldset>
+                        </div>
+
+                        <div>
+                            <input required id="python" type="radio" name="favLang" value="python">
+                            <label for="python">Working together</label>
+                        </div>
+
+                        <div>
+                            <input  required id="net" type="radio" name="favLang" value="net">
+                            <label for="net">Feedback</label>
+                        </div>
+                        
+                        </fieldset>
 
                     <input type="submit" name="submit" value="Submit">
 
@@ -112,7 +120,7 @@
             </section>
         </main>
 
-        <footer id="sm-footer">
+        <footer class="footer">
 
             <a href="#">
                 <svg class="social-media" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
