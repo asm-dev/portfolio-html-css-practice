@@ -21,7 +21,7 @@ footer {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 h3 {
@@ -48,19 +48,19 @@ h3 {
 }
 
 .logo-area span {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .logo-area img {
-    height: 5em;
+    height: 3em;
 }
 
 .dropdown-top-button {
-    width: 10em;
+    width: 6em;
     padding: 1em 0 1em 0em;
     border: none;
     border-radius: 4px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .dropdown-top-button:hover{
@@ -74,7 +74,8 @@ h3 {
 }
 
 .dropdown-top-content {
-    display: none;
+    /* display: none; */
+    display:block;
     position: absolute;
     background-color: #F0F0F0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
@@ -85,11 +86,12 @@ h3 {
     background-color: white;
     border-radius: 4px;
     margin: 0.5em;
-    padding: 0.5em 2.8em 0.5em 2.8em;
+    padding: 0.5em 1.1em;
     display: block;
     text-align: center;
     color: black;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .dropdown-top-content > a:nth-child(1):hover {
@@ -126,7 +128,7 @@ h3 {
     background: rgba(255, 255, 255, 0.65);     
     border-radius: 5px;
     padding: 0.5em;
-    font-size: 3em;
+    font-size: 2.2em;
 }
 
 .extra-info{
@@ -228,12 +230,12 @@ form > label[for="message"]{
     fill: rgb(231, 231, 231);
 }
 
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-}
-
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+
+    .extra-info{
+        display: block;
+    }
 
     .skill {
         width: 30em;
