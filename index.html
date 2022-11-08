@@ -11,17 +11,20 @@
 
             <div id="top-bar">
 
-                <div id="logo">
+                <div class="logo-area">
                     <img src="/images/nav-logo.png" alt="computer icon"/>
                     <span>asm-dev</span>
                 </div>
                 
                 <nav>
-                    <ul>
-                        <li><a href="#portfolio" class="nav-link" id="nav-link-portfolio">Porfolio</a></li>
-                        <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
-                        <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
-                    </ul>
+                    <div class="dropdown-top">
+                        <button class="dropdown-top-button">Dropdown</button>
+                        <div class="dropdown-top-content">
+                            <a href="#portfolio" class="nav-link" id="nav-link-portfolio">Porfolio</a>
+                            <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+                            <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+                        </div>
+                    </div>
                 </nav>
 
             </div>
@@ -33,7 +36,7 @@
         </header>
         <main>
 
-            <section id="portfolio" class="section">
+            <section id="portfolio">
 
                 <article>
                     <h2>A bit about my porfolio</h2>
@@ -47,7 +50,7 @@
 
             </section>
 
-            <section id="skills" class="section">
+            <section id="skills">
 
                 <span>HTML</span>
                 <div class="skill">
@@ -72,7 +75,7 @@
 
             </section>
 
-            <section id="contact" class="section">
+            <section id="contact">
 
                 <h3>Would you like to reach out?</h3>
 

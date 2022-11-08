@@ -15,7 +15,39 @@ footer {
     background-color: rgb(56, 51, 54);
     height: 5em;
     width:100%;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
+
+.dropdown-top-button:hover{
+    background-color: #c73058;
+}
+
+.dropdown-top:hover .dropdown-top-content {
+    display: block;
+    
+}
+
+.dropdown-top-content {
+    display: none;
+    position: absolute;
+    background-color: beige;
+    min-width: 50em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-top-content a {
+    display: block;
+    text-align: center;
+    color: black
+}
+
+.dropdown-top-content a {
+    background-color: aqua;
+    margin: 1em;
+}
+
 
 #top-bar {
     display: flex;
@@ -27,27 +59,10 @@ footer {
 	position: sticky;
 	top: 0;
     background-color: white;
-    padding-top: 1em;
+    padding: 1em 0.5em;
+    
 }
 
-.nav-link {
-    color: rgb(43, 43, 43);
-    border: 1px solid rgb(161, 161, 161);
-    padding: 4px 18px 4px 18px;
-    text-decoration: none;
-}
-
-#nav-link-portfolio:hover {
-    background-color: #fe924446;
-}
-
-#nav-link-skills:hover {
-    background-color: #f5336336;
-}
-
-#nav-link-contact:hover {
-    background-color: #2f877a3b;
-}
 
 #intro {
     background: linear-gradient(0deg, rgba(0,0,0,0.25253851540616246) 0%, rgba(0,0,0,0) 73%, rgba(255, 255, 255, 0.283) 100%), url(../images/colours-background.jpg);
@@ -63,28 +78,17 @@ footer {
     border-radius: 5px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 1em;
-    list-style: none;
-    padding-right: 1em;
-}
-
-#logo {
+.logo-area {
     display: flex;
     align-items: center;
     column-gap: 1em;
-    padding-left: 1em;
-    padding-bottom: 1em;
 }
 
-#logo span {
+.logo-area span {
     font-size: 1.5em;
 }
 
-#logo img {
+.logo-area img {
     height: 5em;
 }
 
@@ -137,6 +141,9 @@ nav ul {
     width: 80%;
 }
 
+form input {
+    display: block;
+}
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -154,6 +161,10 @@ nav ul {
     
     .skill-progress {
         background-color: rgb(32, 97, 97);
+    }
+    
+    form input {
+        display: inline;
     }
 }
 
