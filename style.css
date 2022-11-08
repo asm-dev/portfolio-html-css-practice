@@ -40,6 +40,20 @@ h3 {
     padding: 1em 0.5em;
 }
 
+.logo-area {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.logo-area span {
+    font-size: 1.5em;
+}
+
+.logo-area img {
+    height: 5em;
+}
+
 .dropdown-top-button {
     width: 10em;
     padding: 1em 0 1em 0em;
@@ -50,6 +64,7 @@ h3 {
 
 .dropdown-top-button:hover{
     background-color: #c730582f;
+    transition: 0.3s;
    
 }
 
@@ -78,16 +93,23 @@ h3 {
 
 .dropdown-top-content > a:nth-child(1):hover {
     background-color: rgb(255, 240, 174);
+    transition: 0.3s;
 
 }
 
 .dropdown-top-content > a:nth-child(2):hover {
     background-color: rgb(174, 236, 255);
+    transition: 0.3s;
 
 }
 
 .dropdown-top-content > a:nth-child(3):hover {
     background-color: rgb(217, 194, 255);
+    transition: 0.3s;
+}
+
+.section {
+    margin-top: 5em;
 }
 
 .intro {
@@ -97,7 +119,6 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 .intro h1 {
@@ -107,20 +128,9 @@ h3 {
     font-size: 3em;
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-    column-gap: 1em;
+.extra-info{
+    display: none;
 }
-
-.logo-area span {
-    font-size: 1.5em;
-}
-
-.logo-area img {
-    height: 5em;
-}
-
 
 .skill {
     border: 1px solid rgb(128, 128, 128);
@@ -182,10 +192,12 @@ form input[type="submit"] {
     background-color: #f1bc29;
     margin: 3em auto 5em auto;
     font-size: 1.2em;
+    border: none;
 }
 
 form input[type="submit"]:hover{
     background-color: #8faceb;
+    transition: 0.3s;
 }
 
 .footer {
@@ -199,9 +211,6 @@ form input[type="submit"]:hover{
     width: 3em;
     fill: rgb(231, 231, 231);
 }
-
-
-
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */

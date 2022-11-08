@@ -34,23 +34,26 @@
             </div>
 
         </header>
+
         <main>
 
-            <section id="portfolio">
+            <section id="portfolio" class="section">
 
                 <article>
                     <h2>About my work</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, sit molestiae? Quis sed tempora at fugiat ipsam nostrum nemo quia, provident perferendis soluta velit inventore, tempore corrupti totam debitis repellendus!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa exercitationem nisi earum, dicta quasi, culpa illum ducimus eveniet officia provident aspernatur, itaque quod quibusdam non quidem veritatis quis accusantium consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloribus aliquam repellendus quos praesentium odit vero minima eos ipsa, expedita iure aut eum magni vitae ratione necessitatibus, est aperiam. Quis.</p>
+                    <p class="extra-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa exercitationem nisi earum, dicta quasi, culpa illum ducimus eveniet officia provident aspernatur, itaque quod quibusdam non quidem veritatis quis accusantium consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloribus aliquam repellendus quos praesentium odit vero minima eos ipsa, expedita iure aut eum magni vitae ratione necessitatibus, est aperiam. Quis.</p>
                 </article>
+
+                
+
+            </section>
+
+            <section id="skills" class="section">
 
                 <h3>Skills</h3>
 
                 </article>
-
-            </section>
-
-            <section id="skills">
 
                 <span>HTML</span>
                 <div class="skill">
@@ -75,7 +78,7 @@
 
             </section>
 
-            <section id="contact">
+            <section id="contact" class="section">
 
                 <h3>Would you like to reach out?</h3>
 
@@ -83,31 +86,41 @@
 
                     <label for="name">Name: </label>
                     <input required id="name" name="name" type="text" placeholder=" Please add your name">
+
+                    <label for="name">Last name: </label>
+                    <input required id="name" name="name" type="text" placeholder=" Last name">
                     
+                    <label for="name">Phone: </label>
+                    <input required id="name" name="name" type="text" placeholder=" Phone">
+
                     <label for="email">Email: </label>
-                    <input ide="email" name="email" type="email">
+                    <input id="email" name="email" type="email" placeholder=" Email">
 
                     <fieldset>
 
-                        <legend>Reason</legend>
+                        <legend>How did we meet?</legend>
 
                         <div>
-                        
-                            <input required id="js" type="radio" name="favLang" value="js">
-                            <label for="js">More information</label>
+                            <input required id="js" type="radio" name="howWeMeet" value="js">
+                            <label for="js">Uni</label>
 
                         </div>
 
                         <div>
-                            <input required id="python" type="radio" name="favLang" value="python">
-                            <label for="python">Working together</label>
+                            <input required id="python" type="radio" name="howWeMeet" value="python">
+                            <label for="python">KeepCoding kick-off</label>
                         </div>
 
                         <div>
-                            <input  required id="net" type="radio" name="favLang" value="net">
-                            <label for="net">Feedback</label>
+                            <input  required id="net" type="radio" name="howWeMeet" value="net">
+                            <label for="net">School</label>
                         </div>
-                        
+
+                        <div>
+                            <input  required id="net" type="radio" name="howWeMeet" value="net">
+                            <label for="net">GitHub</label>
+                        </div>
+
                         </fieldset>
 
                     <input type="submit" name="submit" value="Submit">
