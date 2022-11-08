@@ -5,6 +5,7 @@ body {
     background-color: whitesmoke;
     color: rgb(43, 43, 43);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 main {
@@ -198,6 +199,20 @@ form input[type="submit"] {
 form input[type="submit"]:hover{
     background-color: #8faceb;
     transition: 0.3s;
+}
+
+form > #message {
+    max-width: 100%;
+    min-height: 5em;
+    margin: 1em auto 1em auto;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+form > label[for="message"]{
+    display: block;
 }
 
 .footer {

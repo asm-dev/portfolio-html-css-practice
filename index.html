@@ -87,48 +87,49 @@
                     <label for="name">Name: </label>
                     <input required id="name" name="name" type="text" placeholder=" Please add your name">
 
-                    <label for="name">Last name: </label>
-                    <input required id="name" name="name" type="text" placeholder=" Last name">
+                    <label for="lastName">Last name: </label>
+                    <input required id="lastName" name="lastName" type="text" placeholder=" Last name">
                     
-                    <label for="name">Phone: </label>
-                    <input required id="name" name="name" type="text" placeholder=" Phone">
+                    <label for="phoneNumber">Phone: </label>
+                    <input required id="phoneNumber" name="phoneNumber" type="number" placeholder=" Phone number" minlength="9">
 
-                    <label for="email">Email: </label>
-                    <input id="email" name="email" type="email" placeholder=" Email">
+                    <label for="gitHub">Gihub username: </label>
+                    <input id="gitHub" name="gitHub" type="text" placeholder=" Email">
 
                     <fieldset>
 
                         <legend>How did we meet?</legend>
 
                         <div>
-                            <input required id="js" type="radio" name="howWeMeet" value="js">
-                            <label for="js">Uni</label>
+                            <input required id="uni" type="radio" name="uni" value="uni">
+                            <label for="uni">Uni</label>
 
                         </div>
 
                         <div>
-                            <input required id="python" type="radio" name="howWeMeet" value="python">
-                            <label for="python">KeepCoding kick-off</label>
+                            <input required id="keepcoding" type="radio" name="keepcoding" value="keepcoding">
+                            <label for="keepcoding">KeepCoding kick-off</label>
                         </div>
 
                         <div>
-                            <input  required id="net" type="radio" name="howWeMeet" value="net">
-                            <label for="net">School</label>
+                            <input  required id="school" type="radio" name="school" value="school">
+                            <label for="school">School</label>
                         </div>
 
                         <div>
-                            <input  required id="net" type="radio" name="howWeMeet" value="net">
-                            <label for="net">GitHub</label>
+                            <input  required id="gitHubField" type="radio" name="gitHubField" value="net">
+                            <label for="gitHubField">GitHub</label>
                         </div>
 
                         </fieldset>
 
+                    <label for="message">Message: </label>
+                    <textArea id="message" name="message" maxlength="300" placeholder=" Type your message here (max 300 characters)"></textarea>
+            
+
                     <input type="submit" name="submit" value="Submit">
 
                 </form>
-                <!-- How did you meet me (checkboxes)
-                GiHub tag
-                Save -->
 
             </section>
         </main>
