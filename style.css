@@ -114,7 +114,7 @@ h3 {
 }
 
 .intro {
-    background: linear-gradient(0deg, rgba(0,0,0,0.25253851540616246) 0%, rgba(0,0,0,0) 73%, rgba(255, 255, 255, 0.283) 100%), url(../images/colours-background.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0,0.25253851540616246) 0%, rgba(0,0,0,0) 73%, rgba(255, 255, 255, 0.283) 100%), url(./images/colours-background.jpg);
     height: 25rem;
     display: flex;
     justify-content: center;
@@ -202,6 +202,7 @@ form input[type="submit"]:hover{
 }
 
 form > #message {
+    width: 100%;
     max-width: 100%;
     min-height: 5em;
     margin: 1em auto 1em auto;
