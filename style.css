@@ -101,3 +101,33 @@ nav ul {
 main {
     margin: auto 0.8em auto 0.8em;
 }
+
+.skill {
+    border: 1px solid black;
+    width: 30em;
+    margin: 1em 0 1em 0;
+    border-radius: 8px;
+    height: 1em;
+}
+
+.skill-progress {
+    background-color: aqua;
+    height: 1em;
+    border-radius: 8px;
+}
+
+#skill-html {
+    width: 20%;
+}
+
+#skill-css {
+    width: 100%;
+}
+
+#skill-javascript {
+    width: 100%;
+}
+
+#skill-python {
+    width: 100%;
+}
