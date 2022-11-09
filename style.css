@@ -5,7 +5,7 @@ body {
     background-color: whitesmoke;
     color: rgb(43, 43, 43);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 main {
@@ -21,11 +21,11 @@ footer {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 25px;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 22px;
 }
 
 .top-bar {
@@ -111,12 +111,12 @@ h3 {
 }
 
 .section {
-    margin-top: 5em;
+    margin-top: 5vh;
 }
 
 .intro {
     background: linear-gradient(0deg, rgba(0,0,0,0.25253851540616246) 0%, rgba(0,0,0,0) 73%, rgba(255, 255, 255, 0.283) 100%), url(./images/colours-background.jpg);
-    height: 25rem;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,8 +126,8 @@ h3 {
 .intro h1 {
     background: rgba(255, 255, 255, 0.65);     
     border-radius: 5px;
-    padding: 0.5em;
-    font-size: 2.2em;
+    padding: 3vw 5vh;
+    font-size: 8vw;
 }
 
 .extra-info{
@@ -172,7 +172,7 @@ form input:not([type="radio"]) {
     width: 100%;
     border-radius: 10px;
     border: 1px solid rgb(128, 128, 128);
-    padding: 1em 0.5em 1em 0.5em;
+    padding: 0.5em;
     margin: 1em auto 1em auto;
     box-sizing: border-box;
     font-size: 18px;
@@ -238,6 +238,7 @@ form > label[for="message"]{
     width: 3em;
     fill: rgb(231, 231, 231);
 }
+
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
