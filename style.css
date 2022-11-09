@@ -168,22 +168,23 @@ form input:not([type="radio"]) {
     width: 100%;
     border-radius: 10px;
     border: 1px solid rgb(128, 128, 128);
-    padding: 1em 0 1em 0;
+    padding: 1em 0.5em 1em 0.5em;
     margin: 1em auto 1em auto;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+form p {
+    font-weight: 600;
+    margin-top: 2em;
 }
 
 form input[type="radio"] {
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
 } 
 
-fieldset {
-    margin: 2em auto 2em auto;
-    border-radius: 10px;
-    border: 1px solid rgb(128, 128, 128);
-}
-
-fieldset > div {
+form > div {
     display: flex;
     align-items: center;
     column-gap: 1em;
@@ -206,15 +207,20 @@ form > #message {
     width: 100%;
     max-width: 100%;
     min-height: 5em;
+    max-height: 15em;
     margin: 1em auto 1em auto;
     border-radius: 10px;
     border: 1px solid rgb(128, 128, 128);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    padding: 0.5em;
+    box-sizing: border-box;
 }
 
 form > label[for="message"]{
     display: block;
+    margin-top: 2em;
+    font-weight: 600;
 }
 
 .footer {
