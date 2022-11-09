@@ -248,6 +248,41 @@ form > label[for="message"]{
         display: block;
     }
 
+    .dropdown-top-button {
+        width: 10vw;
+    }
+    
+    .dropdown-top-content {
+        width: 10vw;
+    }
+
+    .intro {
+        height: 30vh;
+    }
+    
+    .intro h1 {
+        padding: 1rem 2rem;
+        font-size: 3.5rem;
+    }
+
+    .projects{
+        padding-top: 3em;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .project-img {
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .projects p {
+        text-align: center;
+    }
+
     .skill {
         width: 30em;
         margin: 1em 0 1em 0;
@@ -258,26 +293,31 @@ form > label[for="message"]{
     .skill-progress {
         background-color: rgb(108, 213, 240);
     }
-    
-    form input {
+
+    form input:not([type="radio"]) {
+        width: 30em;
+        margin-left: 0;
         display: inline;
     }
 
-    .intro h1 {
-        padding: 0.5em 5em 0.5em 5em;
-        font-size: 2em;
+    form span {
+        width: 20px;
+        display: flex;
     }
 
-    .projects{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+    form > #message {
+        margin-left: 0;
+        resize: none;
+        height: 10em;
     }
+
+    form input[type="submit"] {
+        width: 10em;
+        margin-left: 0;
+    }
+
+
     
-    .project-img {
-        width: 25vh;
-        height: 25vh;
-        border-radius: 50%;
-        object-fit: cover;
-    }
+
+
 }
