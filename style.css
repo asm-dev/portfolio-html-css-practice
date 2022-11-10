@@ -1,4 +1,10 @@
-/* For mobile phones: */
+/* 
+MOBILE FIRST DESIGN -- media queries can be found at the end of the styles 
+*/
+
+/* 
+GENERAL SETTINGS 
+*/
 
 body {
     margin: 0 0 0 0;
@@ -27,6 +33,10 @@ h2 {
 h3 {
     font-size: 22px;
 }
+
+/* 
+TOP NAV BAR
+*/
 
 .top-bar {
     display: flex;
@@ -111,6 +121,11 @@ h3 {
     transition: 0.3s;
 }
 
+/* 
+HERO AREA
+*/
+
+
 .section {
     margin-top: 5vh;
 }
@@ -135,6 +150,11 @@ h3 {
     display: none;
 }
 
+/* 
+PROJECTS AND SKILLS
+*/
+
+
 .projects{
     display: none;
 }
@@ -153,24 +173,60 @@ h3 {
 }
 
 #skill-html {
-    width: 90%;
+    animation-name: htmlProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes htmlProgressBar {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+
+
 #skill-css {
-    width: 75%;
+    animation-name: cssProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cssProgressBar {
+    0% { width: 0; }
+    100% { width: 95%; }
 }
 
 #skill-javascript {
-    width: 50%;
+    animation-name: jsProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jsProgressBar {
+    0% { width: 0; }
+    100% { width: 50%; }
 }
 
 #skill-python {
-    width: 80%;
+    animation-name: pythonProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pythonProgressBar {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+
+/* 
+CONTACT FORM
+*/
+
+form > p {
+    font-weight: 600;
+    margin-top: 2em;
 }
 
 form input:not([type="radio"]) {
-    display: block;
-    width: 100%;
     border-radius: 10px;
     border: 1px solid rgb(128, 128, 128);
     padding: 0.5em;
@@ -179,9 +235,19 @@ form input:not([type="radio"]) {
     font-size: 18px;
 }
 
-form p {
-    font-weight: 600;
-    margin-top: 2em;
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-container > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container > span > label {
+    display: block;
 }
 
 form input[type="radio"] {
@@ -228,6 +294,10 @@ form > label[for="message"]{
     font-weight: 600;
 }
 
+/* 
+FOOTER
+*/
+
 .footer {
     display: flex;
     align-items: center;
@@ -240,6 +310,9 @@ form > label[for="message"]{
     fill: rgb(231, 231, 231);
 }
 
+/* 
+BIGGER SCREENS SETTINGS
+*/
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -300,16 +373,6 @@ form > label[for="message"]{
         display: inline;
     }
 
-    .form-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .form-container > span > label {
-        display: block;
-    }
-
     form > #message {
         margin-left: 0;
         resize: none;
@@ -321,8 +384,8 @@ form > label[for="message"]{
         margin-left: 0;
     }
 
-
-    
-
+    .logo-area img {
+        height: 5em;
+    }
 
 }
