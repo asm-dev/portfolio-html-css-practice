@@ -102,22 +102,24 @@
 
                 <form action="#" method="">
 
-                    <span>
-                        <label for="name">Name: </label>
-                        <input required id="name" name="name" type="text" placeholder="Please add your name">
-                    </span>
-                    <span>
-                        <label for="lastName">Last name: </label>
-                        <input required id="lastName" name="lastName" type="text" placeholder="Last name">
-                    </span>
-                    <span>
-                        <label for="phoneNumber">Phone: </label>
-                        <input required id="phoneNumber" name="phoneNumber" type="number" placeholder="Phone number" minlength="9">
-                    </span>
-                    <span>
-                        <label for="gitHub">Gihub username: </label>
-                        <input id="gitHub" name="gitHub" type="text" placeholder="@<username>" pattern="_@">
-                    </span>
+                    <div class="form-container">
+                        <span>
+                            <label for="name">Name: </label>
+                            <input required id="name" name="name" type="text" placeholder="Please add your name">
+                        </span>
+                        <span>
+                            <label for="lastName">Last name: </label>
+                            <input required id="lastName" name="lastName" type="text" placeholder="Last name">
+                        </span>
+                        <span>
+                            <label for="phoneNumber">Phone: </label>
+                            <input required id="phoneNumber" name="phoneNumber" type="number" placeholder="Phone number" minlength="9">
+                        </span>
+                        <span>
+                            <label for="gitHub">Gihub username: </label>
+                            <input id="gitHub" name="gitHub" type="text" placeholder="@<username>" pattern="^@[^\s]+">
+                        </span>
+                    </div>
                     <p>How did we meet?</p>
                         <div>
                             <input required id="uni" type="radio" name="meet" value="uni">
